@@ -110,7 +110,7 @@ header {
 
 :root[data-theme="light"] header {
     background: radial-gradient(
-    circle at bottom right,
+    circle at top left,
     rgba(56, 189, 248, 0.25),
     rgba(15, 23, 42, 1)
   );
@@ -175,12 +175,14 @@ header {
 
 /* Logo */
 .company-logo {
-  height: 60px;
+  height: 72px;              /* bump this up from ~56px */
   width: auto;
-  vertical-align: middle;
-  display: inline-block;
-  margin-right: 0.5rem;
+  object-fit: contain;
+  display: block;
+  transform: scale(4.8);     /* visually enlarge the logo */
+  transform-origin: left center;
 }
+
 
 /* ===========================
    Hero
